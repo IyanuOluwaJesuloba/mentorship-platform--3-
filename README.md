@@ -70,22 +70,6 @@ The following API routes are available:
 - `GET /api/requests` - Get mentorship requests
 - `POST /api/requests` - Create mentorship request
 
-## Troubleshooting
-
-### "Unexpected token '<', "<!DOCTYPE "... is not valid JSON"
-
-This error occurs when an API endpoint returns HTML instead of JSON. This usually happens when:
-
-1. **Missing API routes**: The `/api/mentor/dashboard` and `/api/mentee/dashboard` routes were missing and have been added.
-
-2. **Environment variables not set**: Make sure all required environment variables are properly configured.
-
-3. **Database not set up**: Ensure the database tables are created using the provided SQL scripts.
-
-4. **Authentication issues**: Check that the JWT_SECRET is set and the session management is working correctly.
-
-## Project Structure
-
 ```
 ├── app/                    # Next.js app directory
 │   ├── api/               # API routes
